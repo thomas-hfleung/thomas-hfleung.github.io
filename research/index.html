@@ -3,13 +3,6 @@
 
 
 
----
-title: Research
-layout: page
-type: tabs
-order: 1
-permalink: /research/
----
 
 
 
@@ -436,15 +429,48 @@ permalink: /research/
 
 
         <div class="row flex-grow-1">
-          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
+          <main aria-label="Main Content" class="col-12 px-md-4">
             <h1 style="font-weight: bold;">Research</h1>
             <h3 style="font-weight: bold;">Working Paper</h3>
               <!-- Refactor the HTML structure -->
-              <ul style="font-size: 23px;">
-                <li>To Disclose or Withhold: Strategic Information Disclosure in Platform Markets</li>
-                <li>Simple Information Design</li>
-                <li>Negation in the Laboratory (with Andreas Blume, Inga Deimen, Wooyoung Lim)</li>
-              </ul>
+                <details class="paper">
+                <summary>
+                  <strong>Information Disclosure and Social Learning</strong><br>
+                </summary>
+                <p>
+                  This paper studies the disclosure choice of platform designers concerning consumer preferences with an information cascade framework. 
+                  A seller is selling a product with unknown quality on an online platform. 
+                  Consumers with heterogeneous preferences arrive sequentially and make their purchasing decision after observing a private noisy signal and previous consumers' actions. 
+                  Before the consumers arrive and without knowing the product quality, the platform commits to an information structure between Withhold and Disclose: whether future consumers can observe the preference of past consumers. 
+                  The main result of the paper is that the platform prefers to withhold preference information if and only if there are more High-valuation consumers than Low-valuation consumers. 
+                  If the population consists of a majority of High-valuation consumers, the platform prefers withholding information to encourage early Buy cascades. 
+                  If the population consists of a majority of Low-valuation consumers, the platform prefers disclosing the preference of consumers to prevent early Decline cascades.
+                </p>
+              </details>
+
+              <details class="paper">
+                <summary>
+                  <strong>Simple Information Design</strong><br>
+                </summary>
+                <p>
+                  This paper proposes an ordinal measure of complexity for information structures, defined in terms of the contingent reasoning required for agents to recognize their optimal strategy. 
+                  In particular, conditional on receiving an action recommendation, the greater the number of state–action pairs that remain possible, the greater the cognitive effort required to identify obedience as the optimal strategy. 
+                  More complex information structures therefore increase the likelihood that agents deviate from obedience. This introduces a trade-off between payoff maximization and the simplicity of the information structure.
+                </p>
+              </details>
+
+              <details class="paper">
+                <summary>
+                  <strong>Negation in the Laboratory (with Andreas Blume, Inga Deimen, Wooyoung Lim)</strong><br>
+                </summary>
+                <p>
+                  Negation is a linguistic universal. While everything can be communicated with affirmative statements, sometimes it is more efficient to use negation. 
+                  We experimentally investigate to what extent efficiency considerations drive its adoption and use endogenously without an overt negation device. 
+                  If negation emerges, it acts compositionally on complex affirmative statements, whose meanings themselves are compositional. 
+                  Hence, adopting negation helps realizing efficiency gains from compositionality.
+                </p>
+              </details>
+                
 
 
 
@@ -541,47 +567,7 @@ permalink: /research/
           </main>
 
           <!-- panel -->
-          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
-            <div class="access">
-              <!-- Get 5 last posted/updated posts -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              <!-- The trending tags list -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </div>
-
-            
-          </aside>
+          
         </div>
 
         <div class="row">
@@ -740,5 +726,31 @@ permalink: /research/
 </script>
 
   </body>
+
+  <style>
+details.paper {
+  margin-bottom: 1rem;
+  border-left: 3px solid #ddd;
+  padding-left: 1rem;
+}
+
+details.paper summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 20px;
+}
+
+details.paper summary::-webkit-details-marker {
+  display: none;
+}
+
+details.paper summary:hover {
+  color: #0d6efd;
+}
+
+p {
+  font-size: 18px;
+}
+</style>
 </html>
 
